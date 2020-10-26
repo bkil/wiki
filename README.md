@@ -1,4 +1,4 @@
-# diet-science
+# Personal knowledge base
 
 ## Table of contents
 
