@@ -1,5 +1,19 @@
 # HTML rich text support by desktop widget toolkits
 
+## Android text.Html
+
+* Provided by android.text.Html.fromHtml to be used within a TextView
+* Tags: br, p, ul, li, div, span, strong, b, em, cite, dfn, i, big, small, font (color, face=monospace|bold|italic), blockquote, tt, a (href), u, strike, sup, sub, h1, h2, h3, h4, h5, h6, img (src)
+* style attributes on block elements (p, ul, li, div, blockquote, h1, h2, h3, h4, h5, h6): text-align (start, center, end)
+* style attributes (p, span, li): color, background, background-color, text-decoration (line-through)
+* Can be easily extended through the tag handler interface
+
+References:
+
+* https://github.com/aosp-mirror/platform_frameworks_base/blob/db93b81cf5536c272cb47fcc03c4a4ef79006473/core/java/android/text/Html.java#L784
+* https://developer.android.com/reference/android/text/Html.html#fromHtml%28java.lang.String%29
+* https://developer.android.com/reference/android/widget/TextView#setText(java.lang.CharSequence)
+
 ## FLTK
 
 * Provided by the Fl_Help_View widget
