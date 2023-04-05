@@ -47,6 +47,8 @@ https://sillydog.org/narchive/full123.php
 
 http://fi.archive.ubuntu.com/ftp.netscape.com/pub/ls-lR.gz
 
+https://www.quirksmode.org/js/dom0.html#use
+
 ## Mozilla
 
 https://web.archive.org/web/19981206050135/http://www.mozilla.org/download-mozilla.html
