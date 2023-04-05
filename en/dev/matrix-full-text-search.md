@@ -42,6 +42,10 @@ You can only index and search for email of the form `([0-9a-zA-Z_./-]+@)+host.do
 
 Local file paths are roughly composed of words (`.` and accents usually allowed) separated by `/`. It may also contain `~`, but only in the beginning or right after a `/`.
 
+In practical terms, certain characters surrounded by alphanumeric characters amalgamate the whole string into a single word if they resemble one of the above listed special token types. For normal text, this is roughly: `^([0-9a-zA-Z_]|[0-9a-zA-Z_/][0-9a-zA-Z_/@.-]?([0-9a-zA-Z_/.-][0-9a-zA-Z_/@.-]?)*([0-9a-zA-Z_])$`.
+
+### URL
+
 Only URL obeying strict syntax is indexed, but the allowed character set is much wider than word characters in any other token. You can only search for it either in full or separately for its domain part and its trailing part including the leading `/` (but only indexed if it honors the local file path syntax itself!). The domain part must contain at least one dot. When searching, you mustn't type in its protocol - i.e., start it with the domain name. The following characters are explicitly disallowed in code:
 
 ```
@@ -49,8 +53,6 @@ Only URL obeying strict syntax is indexed, but the allowed character set is much
 ```
 
 The following characters don't seem to work either in practice: `!&:()`. The overall approximate range of characters allowed in the URL path, query and anchor is thus: `[][#$%'*+,./0-9;=?@A-Z_a-z~-]` Note that you can percentile encode a URL before submission for indexing, but servers will have difficulties with `&`. If the trailing part contains invalid characters, only the domain will be indexed.
-
-In practical terms, certain characters surrounded by alphanumeric characters amalgamate the whole string into a single word if they resemble one of the above listed special token types. For normal text, this is roughly: `^([0-9a-zA-Z_]|[0-9a-zA-Z_/][0-9a-zA-Z_/@.-]?([0-9a-zA-Z_/.-][0-9a-zA-Z_/@.-]?)*([0-9a-zA-Z_])$`.
 
 ### Query
 
