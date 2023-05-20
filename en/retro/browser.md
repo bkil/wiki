@@ -51,6 +51,13 @@ https://www.quirksmode.org/js/dom0.html#use
 
 ## Mozilla
 
-https://web.archive.org/web/19981206050135/http://www.mozilla.org/download-mozilla.html
+* https://web.archive.org/web/19981206050135/http://www.mozilla.org/download-mozilla.html
+* https://web.archive.org/web/20021007175522/ftp.mozilla.org/pub/mozilla/source/
 
-https://github.com/jrmuizel/mozilla-cvs-history/tree/781c48087175615674b38b31fcc0aae17f0651b6
+Legacy code of Netscape Communicator 5.0 (Gromit):
+
+* https://github.com/zii/netscape
+
+First development snapshot of Gecko:
+
+* https://github.com/jrmuizel/mozilla-cvs-history/tree/781c48087175615674b38b31fcc0aae17f0651b6
