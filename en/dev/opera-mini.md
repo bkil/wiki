@@ -20,9 +20,25 @@ More first hand experimentation would be needed to validate some of the limitati
 * Can an anchor link scroll horizontally (in two dimensions) between targets client side?
 * Is the OBML sent to the client compressed?
 
+### Keyboard
+
+The difficulty of typing characters on the on-screen keypad of Opera Mini running on micro emulator by order of screen depth are the following:
+
+* `[a-z./ ]`, backspace, cancel, enter,
+* `[0-9()+*=&_'"@?!;:,%#-]`
+* `[][$<>{}^\\~|]`
+
+Missing:
+
+```
+`
+```
+
 ## Empirical
 
 * The time to first byte must be less than about 6 seconds, otherwise it will stop with an error message
+* no: wasm, AVIF
+* yes: WebP
 
 ## Metadata
 
@@ -31,6 +47,7 @@ More first hand experimentation would be needed to validate some of the limitati
 * The base URL prefix of the page is omitted from intra-site links
 * head metadata for bookmarking: title, favicon, RSS alternate
 * The proxy server adds X-Forwarded-For HTTP request header towards the origin
+* Cookies: 60/domain, 5117 byte/cookie, 12093 byte/domain
 
 ## JavaScript
 
@@ -43,6 +60,7 @@ More first hand experimentation would be needed to validate some of the limitati
 * focus and blur only on form input elements
 * `console.log()`
 * `body.onload()`
+* `onclick` handlers on a link may sometimes be ignored after a minute if it also includes an href, substituting the action with top level navigation executed on a different proxy server, thus losing application state
 
 ## Unsupported
 
@@ -70,6 +88,7 @@ More first hand experimentation would be needed to validate some of the limitati
 ### Unsupported JavaScript
 
 * partially supported: unload event
+* in `strict mode`, const and let are treated as reserved words
 * events never fired: contextmenu, dblclick, error, keydown, keypress, keyup, mousemove, mouseenter, mouseleave, mouseout, mousewheel, resize, scroll, touchcancel, touchend, touchmove, touchstart
 * `window.open()` and anchor target triggers loading page in a separate screen instead
 * `window.close()`
@@ -139,7 +158,9 @@ white-space: pre;
 * https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/
 * https://dev.opera.com/articles/installing-opera-mini-on-your-computer/
 * https://dev.opera.com/blog/viewing-and-exporting-source-in-opera-mini/
+* https://dev.opera.com/articles/opera-mini-request-headers/
 * https://raw.githubusercontent.com/operasoftware/devopera-static-backup/869f534aded1bade5d626af152c6aac36b4e8553/http/dev.opera.com/articles/view/opera-mini-5-developers/index.html
 * https://github.com/grawity/obml-parser/blob/master/obml.md
 * http://ompd-proxy.narod.ru/
 * https://en.wikipedia.org/wiki/Opera_mini
+* https://en.wikipedia.org/wiki/Presto_(browser_engine)#Web_browsers
