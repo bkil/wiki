@@ -31,9 +31,9 @@ For external references about concrete implementation, see:
 
 ### HTML usable
 
-* cookies
+* cookies: max. 20, max. 4093 bytes/domain
 * basic auth
-* form input field, text area, checkbox, radio button, submit button
+* form input field, text area, checkbox, radio button, submit button, placeholder
 * head metadata for bookmarking: title, favicon, RSS alternate
 * Unicode text encoded as UTF-8
 * Internal anchor links for scrolling
@@ -54,6 +54,8 @@ For external references about concrete implementation, see:
 * video, audio
 * blink, marquee
 * expecting to scroll within an iframe
+* spell checking
+* indeterminate checkbox
 
 ## CSS
 
@@ -143,3 +145,7 @@ May use, but if possible, don't depend on these:
 
 * hashchange
 * contextmenu, dblclick, error, keydown, keypress, keyup, mousemove, mouseenter, mouseleave, mouseout, mousewheel, resize, scroll, touchcancel, touchend, touchmove, touchstart
+
+## References
+
+* https://tests.caniuse.com/
