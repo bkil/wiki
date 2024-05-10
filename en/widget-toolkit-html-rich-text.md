@@ -47,6 +47,11 @@ References:
 * https://fyne.io/blog/2021/09/21/v2.1.html
 * https://developer.fyne.io/api/v2.3/widget/richtext.html
 
+## GTK CSS
+
+* https://docs.gtk.org/gtk3/css-overview.html
+* https://docs.gtk.org/gtk3/class.CssProvider.html
+
 ## GTK Pango
 
 * Tags: b, big, i, s, span, sub, sup, small, tt, u
