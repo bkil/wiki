@@ -46,7 +46,7 @@ In practical terms, certain characters surrounded by alphanumeric characters ama
 
 ### URL
 
-Only URL obeying strict syntax is indexed, but the allowed character set is much wider than word characters in any other token. You can only search for it either in full or separately for its domain part and its trailing part including the leading `/` (but only indexed if it honors the local file path syntax itself!). The domain part must contain at least one dot. When searching, you mustn't type in its protocol - i.e., start it with the domain name. The following characters are explicitly disallowed in code:
+Only URL obeying strict syntax is indexed, but the allowed character set is much wider than word characters in any other token. You can only search for it either in full or separately for its domain part and its trailing path part including the leading `/` (but only indexed if the trailing part honors the local file path syntax itself!). The domain part must contain at least one dot. When searching, you mustn't type in its protocol - i.e., start it with the domain name. The following characters are explicitly disallowed in code:
 
 ```
 "<>\\^`{|}
@@ -58,3 +58,10 @@ The following characters don't seem to work either in practice: `!&:()`. The ove
 
 * a search returns exactly those messages which contain all of the search words listed in the query
 * putting words in quotation marks works to search for phrases
+
+### Edits
+
+As of 2024, Synapse can only find text present in the original message, not any newer edited version.
+
+* https://github.com/element-hq/synapse/issues/8686
+* https://github.com/element-hq/synapse/issues/17118
