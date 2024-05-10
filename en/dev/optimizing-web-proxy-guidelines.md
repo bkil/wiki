@@ -42,7 +42,7 @@ For external references about concrete implementation, see:
 ### HTML overhead
 
 * Vector graphics and canvas are transformed into raster image sprites of PNG or JPEG
-* When the client disabled showing of images, each sprite placeholder may carry metadata for average color, size and original URL
+* When the client disables showing of images, each sprite placeholder may carry metadata for average color, size and original URL
 * Clickable targets (links and click events) leading to too many different destination
 * Clickable targets whose shape must be assembled from multiple rectangles
 * Too many form select options transferred at once on a single page
@@ -149,3 +149,4 @@ May use, but if possible, don't depend on these:
 ## References
 
 * https://tests.caniuse.com/
+* https://explore.whatismybrowser.com/useragents/parse/331890850-instagram-android-jad-al50-webkit

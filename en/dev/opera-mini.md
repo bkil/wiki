@@ -36,9 +36,16 @@ Missing:
 
 ## Empirical
 
-* The time to first byte must be less than about 6 seconds, otherwise it will stop with an error message
+* The content of a bookmark is stored client side and transferred every time it is clicked on
+* The time to first byte over the network must be less than about 6 seconds, otherwise it will stop with an error message
+* If it detects rapid looping (<150ms) via setTimeout, it starts to compress the interval after 1s by invoking every second one without delay
+* A busy loop or a setInterval smaller than 100ms is executed without interruption and sometimes without sending any updates. The page is killed with a transcoder connection timeout after 42s wall clock.
+* While the busy loop is running after load, the normal timeout is not initialized. After the first occasion of slack, the timeout is initialized that will pause after 5s of wall time from that point on in the earliest convenience when a busy loop is not running.
+* Incremental update is adaptive and may not trigger unless the DOM is changed and the interval is long enough
+* An update is reliably sent when the document has stayed unchanged for at least 1.1s or otherwise about once every 1.5-2s depending on cycle time and finally following the normal timeout of ~5.5s
 * no: wasm, AVIF
 * yes: WebP
+* img onerror
 
 ## Metadata
 
@@ -47,11 +54,18 @@ Missing:
 * The base URL prefix of the page is omitted from intra-site links
 * head metadata for bookmarking: title, favicon, RSS alternate
 * The proxy server adds X-Forwarded-For HTTP request header towards the origin
+* `Accept-Language` HTTP request header is sent
 * Cookies: 60/domain, 5117 byte/cookie, 12093 byte/domain
+
+## CSS
+
+* @supports
 
 ## JavaScript
 
 * ES5
+* `alert`, `confirm`
+* `screen.width`, `screen.availWidth`, `screen.colorDepth` (4), `screen.pixelDepth` (4)
 * the page is progressively streamed to the client during the time it is downloaded or manipulated by JavaScript
 * paused after at most about 5 seconds from start of page loading until next interaction
 * setTimeout(), setInterval(), XMLHttpRequest() supported
@@ -61,12 +75,14 @@ Missing:
 * `console.log()`
 * `body.onload()`
 * `onclick` handlers on a link may sometimes be ignored after a minute if it also includes an href, substituting the action with top level navigation executed on a different proxy server, thus losing application state
+* language locale can be extracted from `navigator.userAgent` or `navigator.appVersion`
 
 ## Unsupported
 
 ### Unsupported HTML
 
 * HTML5 form validation
+* `for` attribute of `label` within forms does not activate radio buttons - could be worked around via onclick or a `select` widget
 * video, audio
 * viewport meta
 * blink, marquee
@@ -94,6 +110,8 @@ Missing:
 * `window.close()`
 * localStorage, sessionStorage, Application Cache, Web SQL, IndexedDB
 * Web Workers
+* `navigator.languages` is undefined, `navigator.language`, `navigator.userLanguage`, `navigator.browserLanguage` are always `en`
+* `screen.height` and `screen.availHeight` seem to match width
 
 ## Debug
 
@@ -154,7 +172,10 @@ white-space: pre;
 * https://dev.opera.com/articles/making-sites-work-opera-mini/
 * https://dev.opera.com/blog/opera-mini-5-beta-for-android-phones/
 * https://dev.opera.com/blog/opera-standards-chart/
+* https://dev.opera.com/blog/opera-12-10-is-out/
 * https://raw.githubusercontent.com/operasoftware/devopera-static-backup/869f534aded1bade5d626af152c6aac36b4e8553/http/dev.opera.com/articles/view/javascript-support-in-opera-mini-4/index.html
+* https://github.com/operasoftware/devopera-static-backup/blob/869f534aded1bade5d626af152c6aac36b4e8553/http/dev.opera.com/articles/view/making-small-devices-look-great/index.html
+* https://github.com/operasoftware/devopera-static-backup/blob/869f534aded1bade5d626af152c6aac36b4e8553/http/dev.opera.com/articles/view/designing-with-opera-mini-in-mind/index.html
 * https://dev.opera.com/blog/how-media-queries-allow-you-to-optimize-svg-icons-for-several-sizes/
 * https://dev.opera.com/articles/installing-opera-mini-on-your-computer/
 * https://dev.opera.com/blog/viewing-and-exporting-source-in-opera-mini/
@@ -164,3 +185,4 @@ white-space: pre;
 * http://ompd-proxy.narod.ru/
 * https://en.wikipedia.org/wiki/Opera_mini
 * https://en.wikipedia.org/wiki/Presto_(browser_engine)#Web_browsers
+* https://get.opera.com/ftp/pub/opera/linux/1216/
