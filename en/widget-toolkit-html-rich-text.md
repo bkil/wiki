@@ -32,7 +32,7 @@ References:
 * Provided by the Fl_Help_View widget
 * Supports most HTML 2.0 elements and tables
 * GIF, JPEG, and PNG images displayed inline
-* Tags: a, b, body, br, center, code, dd, dl, dt, em, font, h1, h2, h3, h4, h5, h6, head, hr, i, img, kbd, li, ol, p, pre, strong, table, th, td, tr, title, tt, u, ul, var
+* Tags: a (href, name), b, body (bgcolor, text, link), br, center, code, dd, dl, dt, em, font (color, size, face=helvetica|arial|sans|times|serif|symbol|courier), h1, h2, h3, h4, h5, h6, head, hr, i, img (src, width, height, alt), kbd, li, ol, p, pre, strong, table (border, bgcolor, colspan, align=center|right|left), th, td, tr, title, tt, u, ul, var
 
 https://www.fltk.org/doc-1.4/classFl__Help__View.html#details
 
@@ -116,6 +116,21 @@ References:
 
 * https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags
 * https://doc.qt.io/qt-6/qtextedit.html#markdown-prop
+
+## Tkhtml1
+
+Features:
+
+* Tags: a, address, applet, area, b, base, basefont, bgsound, big, blockquote, body, br, caption, center, cite, code, comment, dd, dfn, dir, div, dl, dt, em, embed, font, form, frame, frameset, h1, h2, h3, h4, h5, h6, hr, html, i, iframe, img, input, isindex, kbd, li, link, listing, map, marquee, menu, meta, nextid, nobr, noframe, noscript, ol, option, p, param, plaintext, pre, s, samp, script, select, small, strike, strong, style, sub, sup, table, td, textarea, th, title, tr, tt, u, ul, var, wbr, xmp
+* Implemented in: C
+* Integrates with: Tcl/Tk
+
+References:
+
+* https://github.com/wjoye/tkhtml1/blob/master/doc/spec.html
+* https://github.com/wjoye/tkhtml1/blob/master/generic/tokenlist.txt
+* https://packages.debian.org/unstable/interpreters/tk-html1
+* https://packages.debian.org/bullseye/tk-html3
 
 ## Unity3D
 
