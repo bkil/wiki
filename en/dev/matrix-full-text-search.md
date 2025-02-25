@@ -34,7 +34,7 @@
 Hyphens are specially supported: they don't completely break the word, but any subpart of a hyphenated word will also become searchable itself, along with the entire amalgamation and any continuous subsequence of hyphen-delimited words within it.
 
 * https://www.postgresql.org/docs/13/textsearch-parsers.html
-* https://stackanswers.net/questions/postgresql-full-text-search-tokenizer
+* https://stackoverflow.com/questions/38760009/how-the-configure-postgresql-tokenization-for-full-text-search
 
 A strict syntax subset of certain special token types are handled, such as email address, URL, host, scientific notation, version number (also fits IPv4 address), decimal numbers and file path. Whitespace, the protocol of a URI, XML tags and XML entities are explicitly ignored.
 
