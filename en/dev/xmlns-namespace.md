@@ -69,6 +69,9 @@ https://en.wikipedia.org/wiki/XML_namespace
 ## opml.org
 * http://opml.org/spec2
 
+## gexf.net
+* http://gexf.net/1.2
+
 ## oclc.org
 * http://purl.oclc.org/dsdl/nvdl/ns/instance/1.0
 * http://purl.oclc.org/dsdl/nvdl/ns/predefinedSchema/1.0
