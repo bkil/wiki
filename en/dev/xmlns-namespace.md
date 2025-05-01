@@ -1,22 +1,22 @@
-# XML namespace list
+#  XML namespace list
 
-##oasis-open.org
+## oasis-open.org
 * http://dita.oasis-open.org/architecture/2005/
 * http://docs.oasis-open.org/uima/ns/base.ecore
 * http://docs.oasis-open.org/uima/ns/pe.ecore
 * http://docs.oasis-open.org/uima/ns/peMetadata.ecore
 * http://docs.oasis-open.org/uima/ns/peService
 
-##docbook.org
+## docbook.org
 * http://docbook.org/ns/docbook
 
-##etherx.jabber.org
+## etherx.jabber.org
 * http://etherx.jabber.org/streams
 
-##iptc.org
+## iptc.org
 * http://iptc.org/std/NITF/2006-10-18/
 
-##jabber.org
+## jabber.org
 * http://jabber.org/protocol/activity
 * http://jabber.org/protocol/address
 * http://jabber.org/protocol/amp
@@ -61,42 +61,42 @@
 * http://jabber.org/protocol/xdata-validate
 * http://jabber.org/protocol/xhtml-im
 
-##apache.org
+## apache.org
 * http://maven.apache.org/POM/4.0.0
 
-##opml.org
+## opml.org
 * http://opml.org/spec2
 
-##oclc.org
+## oclc.org
 * http://purl.oclc.org/dsdl/nvdl/ns/instance/1.0
 * http://purl.oclc.org/dsdl/nvdl/ns/predefinedSchema/1.0
 * http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0
 * http://purl.oclc.org/dsdl/schematron
 
-##purl.org
+## purl.org
 * http://purl.org/dc/dcam/
 * http://purl.org/dc/dcmitype/
 * http://purl.org/dc/elements/1.1/
 * http://purl.org/dc/terms/
 * http://purl.org/rss/1.0/
 
-##relaxng.org
+## relaxng.org
 * http://relaxng.org/ns/annotation/1.0
 * http://relaxng.org/ns/compatibility/annotations/1.0
 * http://relaxng.org/ns/structure/1.0
 
-##android.com
+## android.com
 * http://schemas.android.com/apk/res/android
 
-##biztalk.org
+## biztalk.org
 * http://schemas.biztalk.org/btf-2-0/delivery
 * http://schemas.biztalk.org/btf-2-0/properties
 
-##microsoft.com
+## microsoft.com
 * http://schemas.microsoft.com/winfx/2006/xaml
 * http://schemas.microsoft.com/winfx/2006/xaml/presentation
 
-##openxmlformats.org
+## openxmlformats.org
 * http://schemas.openxmlformats.org/drawingml/2006/chart
 * http://schemas.openxmlformats.org/drawingml/2006/diagram
 * http://schemas.openxmlformats.org/drawingml/2006/main
@@ -115,11 +115,11 @@
 * http://schemas.openxmlformats.org/spreadsheetml/2006/mains
 * http://schemas.openxmlformats.org/wordprocessingml/2006/main
 
-##xmlsoap.org
+## xmlsoap.org
 * http://schemas.xmlsoap.org/soap/envelope/
 * http://schemas.xmlsoap.org/wsdl/
 
-##w3.org
+## w3.org
 * http://www.w3.org/1998/Math/MathML
 * http://www.w3.org/1999/02/22-rdf-syntax-ns#
 * http://www.w3.org/1999/xhtml
@@ -153,35 +153,35 @@
 * http://www.w3.org/TR/WD-profile-vocabulary#
 * http://www.w3.org/XML/1998/namespace
 
-##collada.org
+## collada.org
 * http://www.collada.org/2008/03/COLLADASchema
 
-##daisy.org
+## daisy.org
 * http://www.daisy.org/z3986/2005/ncx/
 
-##ebxml.org
+## ebxml.org
 * http://www.ebxml.org/namespaces/messageHeader
 
-##eclipse.org
+## eclipse.org
 * http://www.eclipse.org/emf/2002/Ecore
 
-##ibm.com
+## ibm.com
 * http://www.ibm.com/namespaces/NASSL
 * http://www.zurich.ibm.com/csc/security/SAMLAttributePredicatesProfile
 
-##idpf.org
+## idpf.org
 * http://www.idpf.org/2007/ops
 * http://www.idpf.org/2013/metadata
 * http://www.idpf.org/2016/encryption#compression
 
-##mozilla.org
+## mozilla.org
 * http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul
 * http://www.mozilla.org/xbl
 
-##music-encoding.org
+## music-encoding.org
 * http://www.music-encoding.org/ns/mei
 
-##omg.org
+## omg.org
 * http://www.omg.org/spec/MOF/20131001
 * http://www.omg.org/spec/UML/20110701
 * http://www.omg.org/spec/UML/20131001
@@ -190,10 +190,10 @@
 * http://www.omg.org/spec/XMI/20131001
 * http://www.omg.org/XMI
 
-##opengis.net/citygml
+## opengis.net/citygml
 * http://www.opengis.net/citygml/2.0
 
-##opengis.net/gml
+## opengis.net/gml
 * http://www.opengis.net/gml
 * http://www.opengis.net/gml/3.2
 * http://www.opengis.net/gml/3.3/ce
@@ -206,22 +206,22 @@
 * http://www.opengis.net/gml/3.3/tin
 * http://www.opengis.net/gml/3.3/xbt
 
-##opengis.net/kml
+## opengis.net/kml
 * http://www.opengis.net/kml/2.2
 
-##rddl.org
+## rddl.org
 * http://www.rddl.org/
 
-##tei-c.org
+## tei-c.org
 * http://www.tei-c.org/ns/1.0
 
-##topografix.com
+## topografix.com
 * http://www.topografix.com/GPX/1/1
 
-##xmpp.org
+## xmpp.org
 * http://www.xmpp.org/extensions
 
-##jabber
+## jabber
 * jabber:client
 * jabber:component:accept
 * jabber:component:connect
@@ -233,7 +233,7 @@
 * jabber:x:oob
 * jabber:x:signed
 
-###jabber:iq
+### jabber:iq
 * jabber:iq:auth
 * jabber:iq:gateway
 * jabber:iq:last
@@ -246,15 +246,15 @@
 * jabber:iq:search
 * jabber:iq:version
 
-##roster
+## roster
 * roster:delimiter
 
-##RowsetSchema
+## RowsetSchema
 ```
-#RowsetSchema
+# RowsetSchema
 ```
 
-##urn:ietf
+## urn:ietf
 * urn:ietf:params:xml:ns:xmpp-bind
 * urn:ietf:params:xml:ns:xmpp-e2e
 * urn:ietf:params:xml:ns:xmpp-sasl
@@ -263,13 +263,13 @@
 * urn:ietf:params:xml:ns:xmpp-streams
 * urn:ietf:params:xml:ns:xmpp-tls
 
-##urn:liberty
+## urn:liberty
 * urn:liberty:paos:2003-08
 
-##urn:mpeg
+## urn:mpeg
 * urn:mpeg:mpeg7:schema:2004
 
-##urn:oasis:names:tc:opendocument
+## urn:oasis:names:tc:opendocument
 * urn:oasis:names:tc:opendocument:xmlns:animation:1.0
 * urn:oasis:names:tc:opendocument:xmlns:chart:1.0
 * urn:oasis:names:tc:opendocument:xmlns:config:1.0
@@ -290,7 +290,7 @@
 * urn:oasis:names:tc:opendocument:xmlns:text:1.0
 * urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0
 
-##urn:oasis:names:tc:SAML
+## urn:oasis:names:tc:SAML
 * urn:oasis:names:tc:SAML:attributes:ext
 * urn:oasis:names:tc:SAML:metadata:algsupport
 * urn:oasis:names:tc:SAML:metadata:attribute
@@ -303,13 +303,13 @@
 * urn:oasis:names:tc:SAML:profiles:v1metadata
 * urn:oasis:names:tc:SAML:protocol:ext:channel-binding
 
-###urn:oasis:names:tc:SAML:1.0
+### urn:oasis:names:tc:SAML:1.0
 * urn:oasis:names:tc:SAML:1.0:action:rwedc-negation
 
-###urn:oasis:names:tc:SAML:1.1
+### urn:oasis:names:tc:SAML:1.1
 * urn:oasis:names:tc:SAML:1.1:profiles:assertion:subject
 
-###urn:oasis:names:tc:SAML:2.0
+### urn:oasis:names:tc:SAML:2.0
 * urn:oasis:names:tc:SAML:2.0:ac
 * urn:oasis:names:tc:SAML:2.0:ac:classes:AuthenticatedTelephony
 * urn:oasis:names:tc:SAML:2.0:ac:classes:InternetProtocol
@@ -353,20 +353,20 @@
 * urn:oasis:names:tc:SAML:2.0:protocol
 * urn:oasis:names:tc:SAML:2.0:protocol:ext:async-slo
 
-##urn:oasis:names:tc:xacml
+## urn:oasis:names:tc:xacml
 * urn:oasis:names:tc:xacml:3.0:core:schema:wd-17
 
-##urn:schemas-microsoft-com
+## urn:schemas-microsoft-com
 * urn:schemas-microsoft-com:office:component:spreadsheet
 * urn:schemas-microsoft-com:office:excel
 * urn:schemas-microsoft-com:office:office
 * urn:schemas-microsoft-com:office:spreadsheet
 * urn:schemas-microsoft-com:rowset
 
-##urn:x-mpeg
+## urn:x-mpeg
 * urn:x-mpeg:mpeg7:amd5:2014
 
-##urn:xmpp
+## urn:xmpp
 * urn:xmpp:archive
 * urn:xmpp:attention:0
 * urn:xmpp:avatar:data
@@ -394,7 +394,7 @@
 * urn:xmpp:time
 * urn:xmpp:xbosh
 
-###urn:xmpp:jingle
+### urn:xmpp:jingle
 * urn:xmpp:jingle:1
 * urn:xmpp:jingle:apps:rtp:1
 * urn:xmpp:jingle:apps:rtp:errors:1
@@ -408,10 +408,10 @@
 * urn:xmpp:jingle:transports:raw-udp:1
 * urn:xmpp:jingle:transports:s5b:1
 
-##uuid
+## uuid
 * uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882
 * uuid:C2F41010-65B3-11d1-A29F-00AA00C14882
 
-##vcard-temp
+## vcard-temp
 * vcard-temp
 * vcard-temp:x:update
