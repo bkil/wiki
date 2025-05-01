@@ -1,4 +1,6 @@
-#  XML namespace list
+# XML namespace list
+
+https://en.wikipedia.org/wiki/XML_namespace
 
 ## oasis-open.org
 * http://dita.oasis-open.org/architecture/2005/
@@ -9,9 +11,6 @@
 
 ## docbook.org
 * http://docbook.org/ns/docbook
-
-## etherx.jabber.org
-* http://etherx.jabber.org/streams
 
 ## iptc.org
 * http://iptc.org/std/NITF/2006-10-18/
@@ -60,6 +59,9 @@
 * http://jabber.org/protocol/xdata-layout
 * http://jabber.org/protocol/xdata-validate
 * http://jabber.org/protocol/xhtml-im
+
+### etherx.jabber.org
+* http://etherx.jabber.org/streams
 
 ## apache.org
 * http://maven.apache.org/POM/4.0.0
@@ -251,7 +253,7 @@
 
 ## RowsetSchema
 ```
-# RowsetSchema
+#RowsetSchema
 ```
 
 ## urn:ietf
