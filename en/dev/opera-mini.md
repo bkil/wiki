@@ -144,6 +144,7 @@ Missing:
 
 ## Does not result in a round trip
 
+* Finding text on the page
 * Scrolling
 * Zooming
 * Choosing between form select options: all options are preloaded
@@ -183,6 +184,6 @@ white-space: pre;
 * https://raw.githubusercontent.com/operasoftware/devopera-static-backup/869f534aded1bade5d626af152c6aac36b4e8553/http/dev.opera.com/articles/view/opera-mini-5-developers/index.html
 * https://github.com/grawity/obml-parser/blob/master/obml.md
 * http://ompd-proxy.narod.ru/
-* https://en.wikipedia.org/wiki/Opera_mini
+* https://en.wikipedia.org/wiki/Opera_mini#JavaScript_support
 * https://en.wikipedia.org/wiki/Presto_(browser_engine)#Web_browsers
 * https://get.opera.com/ftp/pub/opera/linux/1216/
