@@ -18,7 +18,6 @@ More first hand experimentation would be needed to validate some of the limitati
 * Can you search for characters outside ISO-8859-1 on a page client side?
 * Can you search for text spanning multiple rectangles on a page client side?
 * Can an anchor link scroll horizontally (in two dimensions) between targets client side?
-* Is the OBML sent to the client compressed?
 
 ### Keyboard
 
@@ -46,6 +45,26 @@ Missing:
 * no: wasm, AVIF
 * yes: WebP
 * img onerror
+* 20 pages can be saved for offline use, but sometimes history and bookmark links can also come from the cache
+* Textarea default values are included at the beginning of the stream, followed by interaction rectangles, box lines, text labels and finally images
+* Consecutive lines of text of the same style and color can fit a single string block
+* In some rare, special circumstances, preformatted and even table content might get automatically combined into a single string block (mapped to a textarea) if the letter spacing is right, but this needs more research. It is usually sent one character or cell at a time.
+* If loading takes more than 1-2s due to bad radio connection or network load on the proxy, the client will keep retrying the request and the previous, duplicate response may also arrive later. This will bloat the sent or received traffic volume or both.
+* the OBML is sent to the client compressed, probably with gzip
+* A readonly textarea renders similarly to a pre with overflow hidden
+* Supports both PNG and JPEG compression. Seems to select based on number of colors in the original. May results in blurred line diagrams of sometimes larger file size. Images are always recompressed. Low and medium quality: the image is resized to fit the viewport with slight adjustments to quality. High quality: the original image size is preserved, but it is transferred in slices that match the screen size.
+* It is much more efficient to define an onclick function handler using the DOM in JavaScript than with HTML or a stringified handler. Also, the act of attaching an onclick handler itself to certain elements may sometimes break up the markup of the displayed layer despite how it is designed and documented.
+* Decoration for form widgets is sent as images unless the borders and background are overridden
+* Top level navigation always takes a few kB more traffic than interacting with a single page.
+* base-url is not deduced for encoding of anchor references with the same prefix
+* Navigation among a table of anchor links is always linear, while onclick of cells and certain submit buttons can be navigated via a 2D pointer.
+* The center of the image form submit button is sent as click coordinates
+* A textarea can utilize variable width font on some platforms (i.e., where a single font is available)
+* The remote application proxy for a page does not keep JavaScript session state for more than about 5 minutes if no interaction happens before the deadline. Form submission to a URL and clicking on a link which also has a href URL might still work correctly.
+
+See test cases:
+
+* https://bkil.gitlab.io/static-wonders.css/mini-board/
 
 ## Metadata
 
@@ -56,6 +75,7 @@ Missing:
 * The proxy server adds X-Forwarded-For HTTP request header towards the origin
 * `Accept-Language` HTTP request header is sent
 * Cookies: 60/domain, 5117 byte/cookie, 12093 byte/domain
+* viewport meta: device-width and initial-scale improve rendering with mobile mode disabled
 
 ## CSS
 
@@ -84,7 +104,6 @@ Missing:
 * HTML5 form validation
 * `for` attribute of `label` within forms does not activate radio buttons - could be worked around via onclick or a `select` widget
 * video, audio
-* viewport meta
 * blink, marquee
 
 ### Unsupported CSS
