@@ -48,14 +48,15 @@ Missing:
 * 20 pages can be saved for offline use, but sometimes history and bookmark links can also come from the cache
 * Textarea default values are included at the beginning of the stream, followed by interaction rectangles, box lines, text labels and finally images
 * Consecutive lines of text of the same style and color can fit a single string block
-* In some rare, special circumstances, preformatted and even table content might get automatically combined into a single string block (mapped to a textarea) if the letter spacing is right, but this needs more research. It is usually sent one character or cell at a time.
+* In some rare, special circumstances, a preformatted block might get automatically combined into a single string block (mapped to a textarea) if the character spacing is right, but this needs more research. It is otherwise usually layed out one character at a time.
 * If loading takes more than 1-2s due to bad radio connection or network load on the proxy, the client will keep retrying the request and the previous, duplicate response may also arrive later. This will bloat the sent or received traffic volume or both.
 * the OBML is sent to the client compressed, probably with gzip
 * A readonly textarea renders similarly to a pre with overflow hidden
 * Supports both PNG and JPEG compression. Seems to select based on number of colors in the original. May results in blurred line diagrams of sometimes larger file size. Images are always recompressed. Low and medium quality: the image is resized to fit the viewport with slight adjustments to quality. High quality: the original image size is preserved, but it is transferred in slices that match the screen size.
 * It is much more efficient to define an onclick function handler using the DOM in JavaScript than with HTML or a stringified handler. Also, the act of attaching an onclick handler itself to certain elements may sometimes break up the markup of the displayed layer despite how it is designed and documented.
 * Decoration for form widgets is sent as images unless the borders and background are overridden
-* Top level navigation always takes a few kB more traffic than interacting with a single page.
+* Opera mini 4 does not implement incremental rendering, nor transmitting only what changed on screen.
+* Top level navigation always takes a few kB more traffic and further latency than when interacting with a single page.
 * base-url is not deduced for encoding of anchor references with the same prefix
 * Navigation among a table of anchor links is always linear, while onclick of cells and certain submit buttons can be navigated via a 2D pointer.
 * The center of the image form submit button is sent as click coordinates
