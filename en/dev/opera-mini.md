@@ -61,7 +61,7 @@ Missing:
 * Navigation among a table of anchor links is always linear, while onclick of cells and certain submit buttons can be navigated via a 2D pointer.
 * The center of the image form submit button is sent as click coordinates
 * A textarea can utilize variable width font on some platforms (i.e., where a single font is available)
-* The remote application proxy for a page does not keep JavaScript session state for more than about 5 minutes if no interaction happens before the deadline. Form submission to a URL and clicking on a link which also has a href URL might still work correctly.
+* The remote application proxy for a page does not keep JavaScript session state for more than 10 minutes if no interaction happens before the deadline. Form submission to a URL and clicking on a link which has a href URL still works correctly.
 
 See test cases:
 
