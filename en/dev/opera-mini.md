@@ -207,3 +207,4 @@ white-space: pre;
 * https://en.wikipedia.org/wiki/Opera_mini#JavaScript_support
 * https://en.wikipedia.org/wiki/Presto_(browser_engine)#Web_browsers
 * https://get.opera.com/ftp/pub/opera/linux/1216/
+* https://tiffanybbrown.com/2012/09/opera-mini-and-javascript/index.html
